@@ -6,6 +6,7 @@ lang/
 logs/
 scripts/
 tmp/
+WebbserverNTI/
 tools/
 vhosts/
 *error/
