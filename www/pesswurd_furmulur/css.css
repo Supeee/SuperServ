@@ -1,0 +1,65 @@
+body{
+	background-color:rgba(420,169,133,7);
+    background-image: url("https://i.ytimg.com/vi/_2af_A8SCtk/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+	zoom:100%;
+	float:left;
+}
+
+textarea{
+	resize:none;
+}
+
+table{
+	background-color:rgba(333,333,333,3);
+	margin:left;
+	border:3px solid black;
+	border-radius:10px 10px 10px 10px;
+	background-color:white;
+}
+
+td{
+	padding:10px;
+}
+
+p{
+	margin:0px;
+	font-weight:bold;
+	font-style: italic;
+	float:left;
+}
+
+.color-red{
+	color:red;
+}
+
+.center{
+	text-align:center;
+}
+
+.font-size-8{
+	font-size:12px;
+}
+
+.float-right{
+	float:right;
+}
+
+.padding-0{
+	padding:0px;
+}
+
+#rubrik{
+	float:none;
+	text-align:left;
+	font-size:30px;
+	font-weight:bold;
+	font-style: italic;
+}
+
+#MingLee{
+	background-color: white;
+	border:3px solid black;
+	margin-bottom: 10px;
+}
