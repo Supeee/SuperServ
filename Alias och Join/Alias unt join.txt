@@ -1,0 +1,30 @@
+1. Hämta en tabell med alla Orders och vem som har beställt ordern.
+
+SELECT * FROM Customers, Orders;
+
+2. Hämta en tabell med alla produkter som beställts och hur många som beställts. (Dv.s. 10 rader)
+
+SELECT * FROM Products, Orders;
+
+3. Hämta en tabell med Alla Orders, vem som är beställare och totalpris på ordern.
+
+SELECT Price, First_name, Last_name FROM Orders, Customers;
+
+4. Hämta en tabell med Alla Order_details, vilken order varje rad tillhör och vem som är beställare.
+
+
+
+5. Hämta en tabell med varje kund och totala volymen de beställt.
+
+
+6. Hämta en tabell med alla produkter och hur mycket % varje cl innehåller.
+
+
+7. För att göra om Alcohol till en int får vi använda oss av funktionen CAST(). Se ovan^^
+
+
+8. Hämta en tabell med alla produkter och hur mycket % per cl per krona man får. (APK!)
+
+
+9. Hämta den produkt som har bäst APK.
+
