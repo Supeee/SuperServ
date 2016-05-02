@@ -1,0 +1,13 @@
+#back {
+	font-family: 'Oswald', sans-serif;
+  	font-size: 1.2em;
+    background-color: #444;
+    color: white;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+    border-color: #cc6600;
+    border-bottom: 1px solid #888;
+}

@@ -1,0 +1,4 @@
+deny from all
+allow from localhost
+allow from [IP]
+allow from ::1
