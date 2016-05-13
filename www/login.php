@@ -18,22 +18,29 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 	<title>gachi-gasm-forever.com/home</title>
 </head>
 <body>
+
+<div id="page-wrap">
+
+<div id="container">
+	<header>
+		<h1>GachiGASM Forever</h1>
+	</header>
+	<div id="banner">
+		<h2>Bring the cancer all the way home!</h2>
+	</div>
+
+</div>
+
 <div class="nav">
 	<ul>
   		<li><a href="index.php">Home</a></li>
   		<li><a href="news.php">News</a></li>
   		<li><a href="plebshop.php">Plebshop</a></li>
   		<li><a href="about.php">About</a></li>
-  		<li><a href="login.php">Login</a></li>
+  		<li id="selected"><a href="login.php">Login</a></li>
   		<li><a href="MingLee.php">Minglee</a></li>
 	</ul>
 </div>
-
-<script>
-    paypal.minicart.reset();
-</script>
-
-<div id="random_box"></div>
 
 <header>
 <?php
@@ -42,30 +49,26 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 		unset($_SESSION['msg']);
 	}
 ?>
-	Forsen gachi-muchi fan-merch!
 </header>
-
-<main>
 
 <p>Welcome to a fan-made cancer site that supports the king of all plebs, Forsen (also known as: Sebastian Fors). For more information about our dad, please visit http://www.twitch.tv/forsenlol/. Enter the never-lucky give-away!: </p>
 
-<div id="loginboxes">
+<div class="loginboxes">
 	<form method="post" action="verification.php">
-		<p>Username: </p><input type="Text" name="username" required> <br />
-		<p>Password: </p><input type="Password" name="password" required> <br />
+		<label for="username" id="user">Username: </label><input type="Text" name="username" required placeholder="Username" class="input-txt"> <br />
+		<label for="password" id="pass">Password: </label><input type="Password" name="password" required placeholder="Password" class="input-txt"> <br />
 		<input type="submit" name="submit" value="Login" id="bot">
 	</form>
 
 	<p>Or, register here:</p>
 
-	<a href="register.php"><button>Register</button></a>
-	</div>
-
+	<a href="register.php"><button id="button">Register</button></a>
+</div>
+</div>
 <marquee id="Sanic" behavior="relative" direction="right" scrollamount="100">
 <img src="https://www.nedgame.nl/gfx/sonic.png">
 </marquee>
 
-</main>
 
 </body>
 </html>

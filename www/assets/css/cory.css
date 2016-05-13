@@ -1,0 +1,19 @@
+img {
+  background-image: url("www/IMAGES/Korey.jpg");
+  background-size: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 62px;
+  text-transform: uppercase;
+}
+
+#coryboi {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}

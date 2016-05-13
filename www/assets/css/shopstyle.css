@@ -1,0 +1,108 @@
+body {
+	background-image: url("../../IMAGES/bg.png");
+	background-size: 100%;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#line1{
+	width: 515px;
+	height: 5px;
+	border: 5px white;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+#cart {
+	width: 38.5%;
+	height: 100px;
+	margin-left: 10px;
+	border:solid black 5px;
+}
+
+.product {
+	float:left;
+	margin: 10px;
+	width:  512.5px;
+	height: 560px;
+	border: 5px solid black;
+	background-color: darkred;
+}
+
+.productPicture {
+	width: 230px;
+	margin-top: 10px;
+	margin-left: 15px;
+	height: 250px;
+}
+
+.productPicture {
+	height: 100%;
+	width: 100%;
+}
+
+.productName {
+	width: 230px;
+	margin-top: 8px;
+	text-align: left;	
+}
+
+.productName p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: -15px;
+	height: 65px;
+	
+}
+
+.productDesc p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	margin-top: -10px;
+	height: 65px;
+	margin-bottom: -5px;
+}
+
+.productPrice{
+	width: 115px;
+	text-align:center;
+	margin-left: 10px;
+	float:left;
+	margin-left: -20px;
+	height: 35px;
+}
+
+.productPrice p{
+	color:green;
+	font-size: 20px;
+	margin-top: 2px;
+	line-height: 35px;
+}
+
+.purchase{
+	width: 115px;
+	height: 35px;
+	text-align:center;
+	float:left;
+	border: 2px solid black;
+	background-color:lightgreen;
+}
+
+.purchase p{
+	color:white;
+	font-size: 20px;
+	margin: 0px;
+	line-height: 35px;
+	margin-bottom: 50px;
+}
+
+.purchase:hover{
+	background-color:green;
+}
