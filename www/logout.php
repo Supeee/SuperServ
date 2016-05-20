@@ -16,6 +16,10 @@ session_destroy();
 
 <div id="page-wrap">
 
+<div class="bannerImage">
+	<img src="IMAGES/TwistingNether.jpg">
+</div>
+
 <div id="container">
 	<header>
 		<h1>GachiGASM Forever</h1>
@@ -29,7 +33,7 @@ session_destroy();
 <div class="nav">
 	<ul>
   		<li><a href="index.php">Home</a></li>
-  		<li><a href="newspage.php">News</a></li>
+  		<li><a href="forum.php">Forum</a></li>
   		<li><a href="plebshop.php">Plebshop</a></li>
   		<li><a href="about.php">About</a></li>
   		<li><a href="login.php">Login</a></li>

@@ -4,9 +4,38 @@ body {
   color: white;
 }
 
+.bannerImage {
+  z-index: -1px;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 90%;
+  border: 3px solid #000000;
+  padding: 7.5px;
+  background-color: #000;
+}
+
+.bannerImage img {
+  width: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px)
+}
+
 #page-wrap {
-     width: 1000px;
-     margin: 0 auto;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#bg-wrap {
+    background-color: #202020;
+    width: 990px;
+    height: 1300px;
+    padding: 0 0 0px;
+    border: 5px solid black;
+    margin-top: 10px;
+    margin-bottom: 300px;
 }
 
 /* MAIN PAGES */
@@ -40,8 +69,43 @@ p {
   color: white;
 }
 
+.ptags {
+  margin-left: 10px;  
+}
+
+#checkers {
+  margin-left: 10px;
+}
+
 h1 {
-  margin: 1em 0 0.5em 0;
+  margin-top: -220px;
+  margin-left: 175px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 58px;
+  line-height: 54px;
+  text-shadow: 2px 5px 0 black;
+  text-align: center;
+  position: absolute;
+}
+
+h2 {
+  margin-top: -120px;
+  margin-left: 275px;
+  color: white;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+  position: absolute;
+}
+
+h3 {
   font-weight: 100;
   text-transform: uppercase;
   color: white;
@@ -53,17 +117,6 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  margin: 1em 0 0.5em 0;
-  color: white;
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: bold;
-  font-family: 'Josefin Sans', sans-serif;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-
 #Portal2hell {
   font-weight: 100;
   text-transform: uppercase;
@@ -71,11 +124,11 @@ h2 {
   font-family: sans-serif;
   font-size: 34px;
   line-height: 54px;
-  text-shadow: 2px 5px 0 black;
+  text-shadow: 2px 2px 0 black;
   margin-top: 50px;
-  margin-left: 380px;
-  width: 200px;
-  height: 120px;
+  margin-left: 415px;
+  width: 120px;
+  height: 60px;
   padding: 15px 20px;
   border: 1px solid black;
   background-color: #444;
@@ -177,8 +230,17 @@ h2 {
 }
 
 #Knackels {
+  margin-top: -300px;
+  margin-left: -190px;
   position: fixed;
-  z-index: 10;
+  z-index: -1;
+}
+
+#KnackelsIndex {
+  margin-top: -300px;
+  margin-left: -420px;
+  position: fixed;
+  z-index: -1;
 }
 
 /* Cory Page */ 
@@ -223,7 +285,7 @@ h2 {
 }
 
 #bot {
-  margin: 20px;
+  margin-top: 20px;
   width: 25%;
   padding: 15px 30px;
   color: black;
@@ -253,11 +315,11 @@ h2 {
   font-family: sans-serif;
   font-size: 20px;
   line-height: 54px;
-  text-shadow: 2px 5px 0 black;
+  text-shadow: 2px 2px 0 black;
   margin-top: 50px;
-  margin-left: 425px;
-  width: 90px;
-  height: 30px;
+  margin-left: 435px;
+  width: 70px;
+  height: 25px;
   padding: 10px 25px 40px;
   border: 1px solid black;
   background-color: #444;
@@ -286,12 +348,15 @@ h2 {
 
 
 
+.centertexts p {
+  text-align: center;
+}
 
 
 
+/* PLEBPORTAL CSS */
 
-
-#line1{
+#line1 {
   width: 515px;
   height: 5px;
   border: 5px white;
@@ -308,52 +373,53 @@ h2 {
 
 .product {
   float:left;
-  margin: 10px;
+  margin-top: 30px;
+  margin-left: 75px;
   width:  512.5px;
   height: 560px;
   border: 5px solid black;
   background-color: darkred;
+  position: absolute;
 }
 
 .productPicture {
-  width: 230px;
+  width: 512.5px;
   margin-top: 10px;
   margin-left: 15px;
-  height: 250px;
+  height: 560px;
 }
 
-.productPicture {
+.productPicture img {
   height: 100%;
   width: 100%;
 }
 
 .productName {
-  width: 230px;
+  width: 375px;
   margin-top: 8px;
   text-align: left; 
 }
 
-.productName p{
+.productName p {
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   color: white;
   font-weight: bold;
-  margin-bottom: -15px;
-  height: 65px;
-  
+  margin-bottom: -40px;
+  height: 65px;  
 }
 
-.productDesc p{
+.productDesc p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: white;
   font-weight: bold;
   margin-top: -10px;
   height: 65px;
-  margin-bottom: -5px;
+  margin-bottom: 15px;
 }
 
-.productPrice{
+.productPrice {
   width: 115px;
   text-align:center;
   margin-left: 10px;
@@ -362,14 +428,14 @@ h2 {
   height: 35px;
 }
 
-.productPrice p{
+.productPrice p {
   color:green;
   font-size: 20px;
   margin-top: 2px;
   line-height: 35px;
 }
 
-.purchase{
+.purchase {
   width: 115px;
   height: 35px;
   text-align:center;
@@ -378,7 +444,7 @@ h2 {
   background-color:lightgreen;
 }
 
-.purchase p{
+.purchase p {
   color:white;
   font-size: 20px;
   margin: 0px;
@@ -386,6 +452,350 @@ h2 {
   margin-bottom: 50px;
 }
 
-.purchase:hover{
+.purchase:hover {
   background-color:green;
 }
+
+
+
+/* LINE DEBRIS */
+
+
+
+#RightLine {  
+  width: 5px;
+  height: 2160px;
+  border: 5px white;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 1315px;
+  margin-bottom: 100px;
+  position: absolute;
+}
+
+#MiddleLine {  
+  width: 5px;
+  height: 2160px;
+  border: 5px white;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 662.5px;
+  margin-bottom: 100px;
+  position: absolute;
+}
+
+#LeftLine {  
+  width: 5px;
+  height: 2160px;
+  border: 5px white;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  position: absolute;
+}
+
+
+
+/* PRODUCT 2 - THUG T-SHIRT */
+
+
+
+#lineThug {
+  width: 515px;
+  height: 5px;
+  border: 5px white;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.productThug {
+  float:left;
+  margin-top: 30px; 
+  margin-left: 730px;
+  width:  512.5px;
+  height: 560px;
+  border: 5px solid black;
+  background-color: darkred;
+  position: absolute;
+}
+
+.productPictureThug {
+  width: 512.5px;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 560px;
+}
+
+.productPictureThug img {
+  height: 100%;
+  width: 100%;
+}
+
+.productNameThug {
+  width: 375px;
+  text-align: left; 
+}
+
+.productNameThug p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-top: 25.5px;
+  margin-bottom: -40px;
+  height: 65px;
+  
+}
+
+.productDescThug p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: -10px;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.productPriceThug {
+  width: 115px;
+  text-align:center;
+  margin-left: 10px;
+  float:left;
+  margin-left: -20px;
+  height: 35px;
+}
+
+.productPriceThug p {
+  color:green;
+  font-size: 20px;
+  margin-top: 2px;
+  line-height: 35px;
+}
+
+.purchaseThug {
+  width: 115px;
+  height: 35px;
+  text-align:center;
+  float:left;
+  border: 2px solid black;
+  background-color:lightgreen;
+}
+
+.purchaseThug p {
+  color:white;
+  font-size: 20px;
+  margin: 0px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.purchaseThug:hover {
+  background-color:green;
+}
+
+
+.back {
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-size: 21px;
+  text-shadow: 2px 2px 0 black;
+  width: 60px;
+  height: 30px;
+  padding: 5px 5px;
+  border: 1px solid black;
+  background-color: #444;
+  box-shadow: 5px 5px 10px black;
+}
+
+.back:hover {
+  background-color: #cc6600; 
+}
+
+
+
+
+/* FORUM CSS */
+
+
+
+
+.add_question {
+  margin-left: -480px;
+  margin-bottom: 20px;
+}
+
+.add_question table {
+  border-color: #404040;
+  background-color: white;
+}
+
+.add_question td {
+  border-color: black;
+  background-color: white;
+}
+
+.add_question strong {
+  font-family: 'Raleway', sans-serif;
+  color: black; 
+}
+
+
+
+
+
+/* ALL QUESTIONS */
+
+
+
+
+.topics {
+  float:left;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width:  227.5px;
+  height: 150px;
+  border: 5px solid black;
+  background-color: #444;
+}
+
+.topics p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  word-wrap:break-word;
+  padding: 0px 10px;
+}
+
+
+
+
+/* TOPIC INDEX */
+
+
+
+
+.topicsIndex {
+  float:left;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 5px solid black;
+  background-color: #444;
+  z-index: -1;
+}
+
+.topicsIndex p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  word-wrap:break-word;
+  padding: 0px 10px;
+  margin-left: 5px;
+}
+
+.nameIndex {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  word-wrap:break-word;
+  margin-left: 835px;
+}
+
+.dateIndex {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  word-wrap:break-word;
+  margin-left: 835px;
+}
+
+.viewcounter {
+  margin-left: 850px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+
+/* POP UP */
+
+
+#link {
+  position: absolute;
+  margin-left: 15px;
+}
+
+.popUpTitle {
+  background-color: #444;
+  height: 40px;
+  width: 100%;
+}
+
+.popUpTitle p {
+  margin-left: 10px;
+}
+
+.popUpTitle img {
+  float: right;
+  margin-right: 5px;
+  margin-top: -27.5px;
+}
+
+.data {
+  background-color: #FFFFFF;
+  height: auto;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 15px 15px 40px;
+  width: auto;
+}
+
+.buttons li {
+  cursor: pointer;
+  float: left;
+  height: 29px;
+  width: 134px;
+}
+
+span.button {
+  background-color: black;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 25px;
+  text-align: center;
+}
+
+.popUpDisplay {
+  display: none;
+  position: absolute;
+  width: 440px;
+  height: 300px;
+  width: 440px;
+  z-index: 1001;
+}
+
+.dimLayer {
+  display: none;
+  outline: 0px none;
+  height: 100%;
+  width: 100%;
+  background: #A9A9A9;
+  top: 0px;
+  left: 0px;
+  z-index: 900;
+  position: absolute;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -khtml-opacity: 0.5;
+  -moz-opacity: 0.5;
+}
+

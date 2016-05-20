@@ -1,13 +1,7 @@
 <?php
 session_start();
 
-	DEFINE('DB_USER','root');
-	DEFINE('DB_HOST','localhost');
-	DEFINE('DB_PASSWORD','xhtksdlolen123');
-	DEFINE('DB_DATABASE','secure_login');
-	
-	$dbc = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE);
-
+require_once('../Connection/db_connect.php');
 
 if(isset($_POST['mail']) && isset($_POST['username']) && isset($_POST['password'])){
 	$query = "INSERT INTO members (username, email, password) VALUES ('".$_POST['username']."','".$_POST['mail']."', PASSWORD('".$_POST['password']."'));";

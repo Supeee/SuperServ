@@ -9,6 +9,10 @@
 
 <div id="page-wrap">
 
+<div class="bannerImage">
+	<img src="IMAGES/TwistingNether.jpg">
+</div>
+
 <div id="container">
 	<header>
 		<h1>GachiGASM Forever</h1>
@@ -22,7 +26,7 @@
 <div class="nav">
 	<ul>
   		<li id="selected"><a href="index.php">Home</a></li>
-  		<li><a href="newspage.php">News</a></li>
+  		<li><a href="forum.php">Forum</a></li>
   		<li><a href="plebshop.php">Plebshop</a></li>
   		<li><a href="about.php">About</a></li>
   		<li><a href="Logout.php">Logout</a></li>
@@ -30,28 +34,11 @@
 	</ul>
 </div>
 
-<?php
-session_start(); // Starta session
-
-if(!@$_SESSION['loggedIn']){ // Om man inte är inloggad
-	header('Location: login.php'); // Skickas till login.php
-}
-
-
-if(@$_SESSION['timeout']+ 60*10 < time()){ //Om Sessionstiden + 10(60sekunder*10) minuter är mindre än nuvarande tid
- 	session_destroy(); // Avsluta sessionen
- 	session_unset(); // Avsluta sessionen (gammalt sätt)
- 	$meddelande = 'You were kicked due to inactivity '; // Meddelande till användare = Hej då
-}else{ //Sessionen fortfarande aktiv
-	$meddelande = 'You are now logged in '; // Meddeladne till användare = Hej
-	$_SESSION['timeout'] = time(); // Uppdatera sessionstiden
-}
-?>
 <p></p>
-<?php
 
-echo $meddelande; // Visa meddelande ( Hej = Inloggad | Hej då = Utloggad)
-echo $_SESSION['username']; 
+<?php
+include 'logincheck.php';
+
 ?>
 
 <p>Welcome to a fan-made cancer site that supports the king of all plebs, Forsen (also known as: Sebastian Fors). For more information about our dad, please visit http://www.twitch.tv/forsenlol/. Enter the never-lucky give-away!: </p>

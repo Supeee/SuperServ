@@ -5,67 +5,21 @@
 	<link rel="Stylesheet" href="style.css">
 </head>
 <body>
-
-<script>
-
-	$cart = []; // tom lista
-	
-	function buyProduct(n,name){
-		$length = $cart.length;
-		
-		$cart[$length] = [];    // lägg en tom lista i lisan (inception)    [ [10,"Kaluha"],[9,"Sleepy"],[3,"Fish"] ]
-		
-		
-		$cart[$length][0] = n;    //[[x,0]]
-		$cart[$length][1] = name; //[[0,x]]
-		
-		document.getElementById('cart').innerHTML = "";
-		
-		for($i=0;$i<$length+1;$i++){
-			document.getElementById('cart').innerHTML += $cart[$i][1] + "<br>";
-			
-		}
-	
-	}
-	</script>
-	
-	<div id="cart">
-	
-	</div>
-	
-
 	
 <?php
-session_start(); // Starta session
-
-if(!@$_SESSION['loggedIn']){ // Om man inte är inloggad
-	header('Location: login.php'); // Skickas till login.php
-}
-
-
-if(@$_SESSION['timeout']+ 60*10 < time()){ //Om Sessionstiden + 10(60sekunder*10) minuter är mindre än nuvarande tid
- 	session_destroy(); // Avsluta sessionen
- 	session_unset(); // Avsluta sessionen (gammalt sätt)
- 	$meddelande = 'You were kicked due to inactivity '; // Meddelande till användare = Hej då
-}else{ //Sessionen fortfarande aktiv
-	$meddelande = 'Welcome, ';
-	$_SESSION['timeout'] = time(); // Uppdatera sessionstiden
-}
-
-echo $meddelande; // Visa meddelande ( Hej = Inloggad | Hej då = Utloggad)
-echo $_SESSION['username']; 
-
+include 'logincheck.php';
+include '../Connection/db_connect.php'
 ?>
 
-<?php
-	DEFINE('DB_USER','root');
-	DEFINE('DB_HOST','localhost');
-	DEFINE('DB_PASSWORD','xhtksdlolen123');
-	DEFINE('DB_DATABASE','secure_login');
-	
-	$dbc = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE);
+<div class="back"><a href="index.php">Back</a>
+</div>
 
-	$query = "SELECT * FROM products;";
+<div id="LeftLine">
+	
+</div>
+
+<?php
+	$query = "SELECT * FROM products where id=1;";
 	$result = mysqli_query($dbc,$query);
 	
 	while($row=mysqli_fetch_array($result)){			
@@ -79,7 +33,7 @@ echo $_SESSION['username'];
 					</div>
 					
 					<div class="productName">
-						<p> '.$row['name'].' </p1>
+						<p> '.$row['name'].' </p>
 					</div>
 					
 					';
@@ -90,11 +44,11 @@ echo $_SESSION['username'];
 					<?php
 			echo'
 					<div class="productDesc">
-						<p> '.$row['description'].' </p1>
+						<p> '.$row['description'].' </p>
 					</div>
 
 					<div class="productPrice">
-						<p> '.$row['price'].' $ |</p1>
+						<p> '.$row['price'].' $ |</p>
 					</div>
 					';
 
@@ -110,6 +64,59 @@ echo $_SESSION['username'];
 			';	
 	}
 ?>
+
+<div id="MiddleLine">
+	
+</div>
+
+<?php
+	$query = "SELECT * FROM products where id=2;";
+	$result = mysqli_query($dbc,$query);
+	
+	while($row=mysqli_fetch_array($result)){			
+	
+			echo'
+			
+				<div class="productThug">
+			
+					<div class="productPictureThug">
+						<img src="IMAGES\forsenshirtThug.jpg" />
+					</div>
+					
+					<div class="productNameThug">
+						<p> '.$row['name'].' </p>
+					</div>
+					
+					';
+					?>
+
+					<div id="lineThug"></div>
+
+					<?php
+			echo'
+					<div class="productDescThug">
+						<p> '.$row['description'].' </p>
+					</div>
+
+					<div class="productPriceThug">
+						<p> '.$row['price'].' $ |</p>
+					</div>
+					';
+
+					?>
+
+					<div class="purchaseThug" onmousedown="buyProduct(<?php echo $row['id'];  ?>, '<?php echo $row['name']; ?>')">
+					<?php
+						echo'
+
+						<p> Purchase </p>
+					</div>	
+				</div>
+			';	
+	}
+?>
+
+<div id="RightLine"></div>
 
 </div>
 </body>

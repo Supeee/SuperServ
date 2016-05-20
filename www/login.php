@@ -21,6 +21,10 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 
 <div id="page-wrap">
 
+<div class="bannerImage">
+	<img src="IMAGES/TwistingNether.jpg">
+</div>
+
 <div id="container">
 	<header>
 		<h1>GachiGASM Forever</h1>
@@ -34,7 +38,7 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 <div class="nav">
 	<ul>
   		<li><a href="index.php">Home</a></li>
-  		<li><a href="news.php">News</a></li>
+  		<li><a href="forum.php">Forum</a></li>
   		<li><a href="plebshop.php">Plebshop</a></li>
   		<li><a href="about.php">About</a></li>
   		<li id="selected"><a href="login.php">Login</a></li>
