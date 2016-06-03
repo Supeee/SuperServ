@@ -4,6 +4,11 @@ body {
   color: white;
 }
 
+@font-face {
+    font-family: HAGANE;
+    src: url(assets/fonts/Adventure.otf);
+}
+
 .bannerImage {
   z-index: -1px;
   margin: auto;
@@ -12,6 +17,7 @@ body {
   border: 3px solid #000000;
   padding: 7.5px;
   background-color: #000;
+  border-radius: 10px; 
 }
 
 .bannerImage img {
@@ -31,11 +37,12 @@ body {
 #bg-wrap {
     background-color: #202020;
     width: 990px;
-    height: 1300px;
+    height: 2000px;
     padding: 0 0 0px;
     border: 5px solid black;
     margin-top: 10px;
     margin-bottom: 300px;
+    border-radius: 10px;
 }
 
 /* MAIN PAGES */
@@ -69,6 +76,15 @@ p {
   color: white;
 }
 
+.pinsamlinje {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 960px;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 10px;   
+}
+
 .ptags {
   margin-left: 10px;  
 }
@@ -79,13 +95,13 @@ p {
 
 h1 {
   margin-top: -220px;
-  margin-left: 175px;
-  font-weight: 100;
+  margin-left: 170px;
+  font-weight: 10px;
   text-transform: uppercase;
   color: white;
-  font-family: sans-serif;
+  font-family: 'HAGANE';
   font-style: italic;
-  font-size: 58px;
+  font-size: 64px;
   line-height: 54px;
   text-shadow: 2px 5px 0 black;
   text-align: center;
@@ -93,13 +109,14 @@ h1 {
 }
 
 h2 {
-  margin-top: -120px;
-  margin-left: 275px;
+  margin-top: -140px;
+  margin-left: 260px;
   color: white;
-  font-size: 26px;
+  font-size: 32px;
   line-height: 40px;
   font-weight: bold;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'HAGANE';
+  font-style: italic;
   text-shadow: 2px 2px 0 black;
   text-align: center;
   position: absolute;
@@ -109,7 +126,7 @@ h3 {
   font-weight: 100;
   text-transform: uppercase;
   color: white;
-  font-family: sans-serif;
+  font-family: 'HAGANE';
   font-style: italic;
   font-size: 58px;
   line-height: 54px;
@@ -161,6 +178,10 @@ h2 {
 
 /* NAV BAR */
 
+nav {
+  width: 100%;
+}
+
 #selected {
   background-color: #cc6600;
 }
@@ -173,6 +194,7 @@ h2 {
   margin: 0;
   box-shadow: 5px 5px 10px black;
 }
+
 .nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
@@ -203,7 +225,7 @@ h2 {
  
 @media screen and (min-width: 600px) {
   .nav li {
-    width: 120px;
+    width: 140px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
@@ -231,7 +253,7 @@ h2 {
 
 #Knackels {
   margin-top: -300px;
-  margin-left: -190px;
+  margin-left: -210px;
   position: fixed;
   z-index: -1;
 }
@@ -243,7 +265,27 @@ h2 {
   z-index: -1;
 }
 
+.kaby {
+  margin-top: 150px;
+  margin-left: -50px;
+  position: fixed;
+}
+
+.kaby img {
+  width: 100px;
+}
+
+.pranked {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.pranked img {
+  width: 500px;
+}
+
 /* Cory Page */ 
+
 
 
 
@@ -384,8 +426,6 @@ h2 {
 
 .productPicture {
   width: 512.5px;
-  margin-top: 10px;
-  margin-left: 15px;
   height: 560px;
 }
 
@@ -464,7 +504,7 @@ h2 {
 
 #RightLine {  
   width: 5px;
-  height: 2160px;
+  height: 2300px;
   border: 5px white;
   background-color: white;
   margin-top: 20px;
@@ -475,7 +515,7 @@ h2 {
 
 #MiddleLine {  
   width: 5px;
-  height: 2160px;
+  height: 2300px;
   border: 5px white;
   background-color: white;
   margin-top: 20px;
@@ -486,7 +526,7 @@ h2 {
 
 #LeftLine {  
   width: 5px;
-  height: 2160px;
+  height: 2300px;
   border: 5px white;
   background-color: white;
   margin-top: 20px;
@@ -617,12 +657,422 @@ h2 {
 
 
 
+/* Product 3 */
+
+
+
+
+
+#lineTrump {
+  width: 515px;
+  height: 5px;
+  border: 5px white;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.productTrump {
+  float:left;
+  margin-top: 830px;
+  margin-left: 75px;
+  width:  512px;
+  height: 512px;
+  border: 5px solid black;
+  background-color: darkred;
+  position: absolute;
+}
+
+.productPictureTrump {
+  width: 512.5px;
+}
+
+.productNameTrump {
+  width: 375px;
+  margin-top: 8px;
+  text-align: left; 
+}
+
+.productNameTrump p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: -40px;
+  height: 65px;  
+}
+
+.productDescTrump p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: -10px;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.productPriceTrump {
+  width: 115px;
+  text-align:center;
+  margin-left: 10px;
+  float:left;
+  margin-left: -20px;
+  height: 35px;
+}
+
+.productPriceTrump p {
+  color:green;
+  font-size: 20px;
+  margin-top: 2px;
+  line-height: 35px;
+}
+
+.purchaseTrump {
+  width: 115px;
+  height: 35px;
+  text-align:center;
+  float:left;
+  border: 2px solid black;
+  background-color:lightgreen;
+}
+
+.purchaseTrump p {
+  color:white;
+  font-size: 20px;
+  margin: 0px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.purchaseTrump:hover {
+  background-color:green;
+}
+
+
+
+
+/* Product 4 */
+
+
+
+
+
+#lineGASM {
+  width: 515px;
+  height: 5px;
+  border: 5px white;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.productGASM {
+  float:left;
+  margin-top: 830px;
+  margin-left: 730px;
+  width:  512px;
+  height: 512px;
+  border: 5px solid black;
+  background-color: darkred;
+  position: absolute;
+}
+
+.productPictureGASM {
+  width: 512.5px;
+}
+
+.productPictureGASM img {
+  width: 512px;
+  height: 512px;
+}
+
+.productNameGASM {
+  width: 375px;
+  margin-top: 8px;
+  text-align: left; 
+}
+
+.productNameGASM p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: -40px;
+  height: 65px;  
+}
+
+.productDescGASM p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: -10px;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.productPriceGASM {
+  width: 115px;
+  text-align:center;
+  margin-left: 10px;
+  float:left;
+  margin-left: -20px;
+  height: 35px;
+}
+
+.productPriceGASM p {
+  color:green;
+  font-size: 20px;
+  margin-top: 2px;
+  line-height: 35px;
+}
+
+.purchaseGASM {
+  width: 115px;
+  height: 35px;
+  text-align:center;
+  float:left;
+  border: 2px solid black;
+  background-color:lightgreen;
+}
+
+.purchaseGASM p {
+  color:white;
+  font-size: 20px;
+  margin: 0px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.purchaseGASM:hover {
+  background-color:green;
+}
+
+
+
+/* Product 5 */
+
+
+
+
+
+#lineFrank {
+  width: 515px;
+  height: 5px;
+  border: 5px white;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.productFrank {
+  float:left;
+  margin-top: 1580px;
+  margin-left: 75px;
+  width:  512px;
+  height: 512px;
+  border: 5px solid black;
+  background-color: darkred;
+  position: absolute;
+}
+
+.productPictureFrank {
+  width: 512.5px;
+}
+
+.productPictureFrank img {
+  width: 512px;
+  height: 512px;
+}
+
+.productNameFrank {
+  width: 375px;
+  margin-top: 8px;
+  text-align: left; 
+}
+
+.productNameFrank p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: -40px;
+  height: 65px;  
+}
+
+.productDescFrank p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: -10px;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.productPriceFrank {
+  width: 115px;
+  text-align:center;
+  margin-left: 10px;
+  float:left;
+  margin-left: -20px;
+  height: 35px;
+}
+
+.productPriceFrank p {
+  color:green;
+  font-size: 20px;
+  margin-top: 2px;
+  line-height: 35px;
+}
+
+.purchaseFrank {
+  width: 115px;
+  height: 35px;
+  text-align:center;
+  float:left;
+  border: 2px solid black;
+  background-color:lightgreen;
+}
+
+.purchaseFrank p {
+  color:white;
+  font-size: 20px;
+  margin: 0px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.purchaseFrank:hover {
+  background-color:green;
+}
+
+
+
+
+/* Product 6 */
+
+
+
+
+
+#lineReynoodle {
+  width: 515px;
+  height: 5px;
+  border: 5px white;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.productReynoodle {
+  float:left;
+  margin-top: 1580px;
+  margin-left: 730px;
+  width:  512px;
+  height: 512px;
+  border: 5px solid black;
+  background-color: darkred;
+  position: absolute;
+}
+
+.productPictureReynoodle {
+  width: 512.5px;
+}
+
+.productPictureReynoodle img {
+  width: 512px;
+  height: 512px;
+}
+
+.productNameReynoodle {
+  width: 375px;
+  margin-top: 8px;
+  text-align: left; 
+}
+
+.productNameReynoodle p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: -40px;
+  height: 65px;  
+}
+
+.productDescReynoodle p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: -10px;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.productPriceReynoodle {
+  width: 115px;
+  text-align:center;
+  margin-left: 10px;
+  float:left;
+  margin-left: -20px;
+  height: 35px;
+}
+
+.productPriceReynoodle p {
+  color:green;
+  font-size: 20px;
+  margin-top: 2px;
+  line-height: 35px;
+}
+
+.purchaseReynoodle {
+  width: 115px;
+  height: 35px;
+  text-align:center;
+  float:left;
+  border: 2px solid black;
+  background-color:lightgreen;
+}
+
+.purchaseReynoodle p {
+  color:white;
+  font-size: 20px;
+  margin: 0px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.purchaseReynoodle:hover {
+  background-color:green;
+}
+
+
+
+
 /* FORUM CSS */
 
+.forum_news {
+  float:left;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 5px;
+  width:  227.5px;
+  height: 160px;
+  border: 5px solid black;
+  background-color: #444;
+}
 
-
+.forum_news h4 {
+  margin-top: 5px;
+  margin-left: 70px;
+  font-weight: 10;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'HAGANE';
+  font-size: 22px;
+  text-shadow: 2px 3px 0 black;
+}
 
 .add_question {
+  margin-top: 40px;
   margin-left: -480px;
   margin-bottom: 20px;
 }
@@ -642,8 +1092,29 @@ h2 {
   color: black; 
 }
 
+.awkwardline {
+  margin-top: 50px;
+  margin-left: -40px;
+  width: 1060px;
+  height: 100px;
+  border: 5px solid black;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-
+.awkwardline h5 {
+  margin-top: 0px;
+  margin-left: -25px;
+  font-weight: 10px;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'HAGANE';
+  font-style: italic;
+  font-size: 68px;
+  text-shadow: 2px 3px 0 black;
+  text-align: center;
+}
 
 
 /* ALL QUESTIONS */
@@ -657,9 +1128,10 @@ h2 {
   margin-left: 5px;
   margin-right: 5px;
   width:  227.5px;
-  height: 150px;
+  height: 175px;
   border: 5px solid black;
   background-color: #444;
+  border-radius: 10px;
 }
 
 .topics p {
@@ -799,3 +1271,39 @@ span.button {
   -moz-opacity: 0.5;
 }
 
+
+/* MING LEE PAGE */
+
+p1 {
+  margin-left: 200px;
+  color: white;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px 0 black;
+}
+
+.Back1 {
+  margin-top: 20px;
+  margin-left: 450px;
+  width: 50px;
+  font-size: 1.5em;
+  padding: 15px 20px;
+  position: center;
+  border: 1px solid black;
+  background-color: #444;
+  box-shadow: 5px 5px 10px black;
+}
+
+.Back1:hover {
+  background-color: #cc6600;
+}
+
+.back1text {
+  color: white;
+}
+
+.back1text:focus {
+  color: black;
+}

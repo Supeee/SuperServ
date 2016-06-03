@@ -31,6 +31,7 @@
   		<li><a href="about.php">About</a></li>
   		<li><a href="Logout.php">Logout</a></li>
   		<li><a href="MingLee.php">Minglee</a></li>
+  		<li><a href="Admin.php">Admin Login</a></li>
 	</ul>
 </div>
 
@@ -42,6 +43,7 @@ include 'logincheck.php';
 ?>
 
 <p>Welcome to a fan-made cancer site that supports the king of all plebs, Forsen (also known as: Sebastian Fors). For more information about our dad, please visit http://www.twitch.tv/forsenlol/. Enter the never-lucky give-away!: </p>
+
 
 <div><a id="cory" href="cory_secret_hideout.php">Cory's confinement, do not open.</a>
 </div>

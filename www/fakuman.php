@@ -30,6 +30,7 @@
 	  		<li><a href="about.php">About</a></li>
 	  		<li id="selected"><a href="Login.php">Login</a></li>
 	  		<li><a href="MingLee.php">Minglee</a></li>
+  			<li><a href="Admin.php">Admin Login</a></li>
 		</ul>
 	</div>
 

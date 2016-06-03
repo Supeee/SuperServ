@@ -38,6 +38,7 @@ session_destroy();
   		<li><a href="about.php">About</a></li>
   		<li><a href="login.php">Login</a></li>
   		<li><a href="MingLee.php">Minglee</a></li>
+
 	</ul>
 </div>
 

@@ -1,15 +1,10 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styleminglee.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>MingLee page HERROW</title>
 </head>
 <body>
-
-<?php
-include 'logincheck.php';
-
-?>
 
 <div id="page-wrap">
 
@@ -35,8 +30,14 @@ include 'logincheck.php';
 	  		<li><a href="about.php">About</a></li>
 	  		<li><a href="Logout.php">Logout</a></li>
 	  		<li id="selected"><a href="MingLee.php">Minglee</a></li>
+  			<li><a href="Admin.php">Admin Login</a></li>
 		</ul>
 	</div>
+<p></p>
+<?php
+include 'logincheck.php';
+
+?>
 
 	<embed src="assets/sound/ming_theme.mp3" autostart="true" loop="true"
 	  width="2" height="0">
@@ -48,9 +49,9 @@ include 'logincheck.php';
 	  </marquee>
 	</marquee>
 
-	<p>FAT AND SINGLE, READY TO MINGLEE</p>
+	<p1>FAT AND SINGLE, READY TO MINGLEE</p1>
 
-	<div class="back"><a class="backtext" href="index.php">Back</a>
+	<div class="back1"><a class="back1text" href="index.php">Back</a>
 	</div>
 
 </div>

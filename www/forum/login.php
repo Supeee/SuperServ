@@ -43,6 +43,7 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
   		<li><a href="/about.php">About</a></li>
   		<li id="selected"><a href="/login.php">Login</a></li>
   		<li><a href="/MingLee.php">Minglee</a></li>
+  		<li><a href="/Admin.php">Admin Login</a></li>
 	</ul>
 </div>
 

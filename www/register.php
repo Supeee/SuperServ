@@ -18,7 +18,7 @@
 			<input type="text" placeholder="Your@email.com" name="mail" autofocus />
 			<input type="password" placeholder="Password" name="password" autofocus />
 			<button type="submit">Register</button>
-
+			
 			<span></span>
 
 		</form>

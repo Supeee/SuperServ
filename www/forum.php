@@ -19,7 +19,6 @@
 		<div id="banner">
 			<h2>Bring the cancer all the way home!</h2>
 		</div>
-
 	</div>
 
 	<div class="nav">
@@ -30,6 +29,7 @@
 	  		<li><a href="about.php">About</a></li>
 	  		<li><a href="Logout.php">Logout</a></li>
 	  		<li><a href="MingLee.php">Minglee</a></li>
+  			<li><a href="Admin.php">Admin Login</a></li>
 		</ul>
 	</div>
 
@@ -42,9 +42,24 @@
 
 		?>
 		</div>
+
 		<div class="ptags">
-			<p>Welcome to our very own forums-page! Here the admins post the latest news about Forsen and his cancer adventures (including Salty Sunday episodes, brought to you by Tempostorm.com!)</p>
+			<p>Welcome to our very own forums-page! Here the admins post the latest news about Forsen and his cancer adventures (including Salty Sunday episodes, brought to you by Selloutstorm.com!)</p>
 		</div>
+
+		<div class="pinsamlinje">
+			
+		</div>
+
+		<div class="forum_news">
+			<!--Skriver h4 eftesrsom h1, h2 och eventuellt h3 är upptagna för titlen och annat (position: absolute; är ivägen).-->
+			
+			<h4>Recent: </h4>
+
+				<p></p>
+
+		</div>
+
 		<div class="add_question">
 
 			<table width="500" border="10" align="center">
@@ -84,6 +99,11 @@
 
 		<img id="Knackels" src="IMAGES/knackels.gif">
 
+		<div class="awkwardline">
+			<h5>Topics</h5>
+		</div>
+
+
 		<?php
 		include '../Connection/db_connect.php'
 		?>
@@ -93,9 +113,9 @@
 			$result = mysqli_query($dbc,$query);
 			while($row=mysqli_fetch_array($result)){			
 		?>
-					
+						<a href="/forum/index.php?topic=<?php echo $row['id']; ?>">
 						<div class="topics">
-							
+						
 							<div class="topicName">
 								<p> 
 								<?php echo $row['topic'] ?>
@@ -105,7 +125,6 @@
 						
 
 							<div class="detail">
-							<a href="/forum/index.php?topic=<?php echo $row['id']; ?>">
 								<p> 
 								<?php echo substr($row['detail'],0,60);
 								if(strlen($row['detail']) >= 60){
@@ -113,8 +132,9 @@
 									}
 									?> 
 								</p>
-							</div></a>
+							</div>
 						</div>
+						</a>
 			<?php
 			} // Avsluta while-loop
 		?>

@@ -14,6 +14,15 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`) VALUES
 INSERT INTO `products` (`id`, `name`, `description`, `price`) VALUES
 (2, 'Forsen:\nThug life T-shirt.', 'Thug life T-shirt: Forsen's own thug life t-shirt portraits the best about Forsen, in this shirt you will find well-known memes such as: "Kappa", "TryHard", the cigarette from montage parodies and of course the thug life meme.', 15.99);
 
+INSERT INTO `products` (`id`, `name`, `description`, `price`) VALUES
+(3, 'TrumpSC:\nTrump face T-shirt.', 'TrumpSC face T-shirt: This is the face of the man so called Trump, Forsens one and only rival. Tuck Frump people say.\n(Man not included when purchasing this product).', 15.99);
+
+
+INSERT INTO `products` (`id`, `name`, `description`, `price`) VALUES
+(4, 'Forsen:\nGachiGASM T-shirt.', 'GachiGASM T-shirt: The face of Billy Herrington (dont google) the best emote on twitch. This emote represents brotherhood, love and intellegence.', 15.99);
+
+INSERT INTO `products` (`id`, `name`, `description`, `price`) VALUES
+(5, 'Filthy Frank:\nChromosomes', 'A shirt that represents all the characters in the Filthy Frank Show. Famous characters such as, Pink guy, Salamander man and Safari man are included in this shirt.', 15.99);
 
 CREATE TABLE `forum_question` (
 `id` int(4) NOT NULL auto_increment,
@@ -27,6 +36,28 @@ CREATE TABLE `forum_question` (
 PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
 
+Table forum_answer
+CREATE TABLE `forum_answer` (
+`question_id` int(4) NOT NULL default '0',
+`a_id` int(4) NOT NULL default '0',
+`a_name` varchar(65) NOT NULL default '',
+`a_email` varchar(65) NOT NULL default '',
+`a_answer` longtext NOT NULL,
+`a_datetime` varchar(25) NOT NULL default '',
+KEY `a_id` (`a_id`)
+)
+
+CREATE TABLE `recent_news` (
+`id` int(4) NOT NULL auto_increment,
+`article` varchar(255) NOT NULL default '',
+`text` longtext NOT NULL,
+`title` varchar(65) NOT NULL default '',
+`email` varchar(65) NOT NULL default '',
+`datetime` varchar(25) NOT NULL default '',
+`view` int(4) NOT NULL default '0',
+`reply` int(4) NOT NULL default '0',
+PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
 
 <script>
 

@@ -31,6 +31,7 @@
   		<li><a href="/about.php">About</a></li>
   		<li><a href="/Logout.php">Logout</a></li>
   		<li><a href="/MingLee.php">Minglee</a></li>
+  		<li><a href="/Admin.php">Admin Login</a></li>
 	</ul>
 </div>
 
@@ -61,38 +62,16 @@ require '../../Connection/db_connect.php';
 					
 					<div class="detailIndex">
 						<p>
-					<?php echo $row['detail'] ?> 
+					<?php echo $row['detail'] ?>
 						</p>
 					</div>
 
-					<script type="text/javascript">
-						var link;
-						var element;
-						function openPopUp(url)
-						{
-							link = url;
-							element = document.getElementById("background");
-							element.style.display = "block";
-							element = document.getElementById("popup");
-							element.style.display = "block";
-						  
-						}
+					<?php 
 
-						function closePopUp()
-						{
-							element = document.getElementById("popup");
-							element.style.display = "none";
-							element = document.getElementById("background");
-							element.style.display = "none";
-						}
+					include '../functions/deleteconfirm.php';
 
-						function leave() {
-						  var myWindow = window.open("", "_self");
-						  myWindow.document.write("");
-						  setTimeout (function() {myWindow.close();},1);
-						}
+					?>
 
-					</script>
 					<div id="background" class="dimLayer"></div>
 
 					<div id="popup" class="popUpDisplay">
@@ -127,31 +106,7 @@ require '../../Connection/db_connect.php';
 					<div class="viewcounter">
 						<?php
 
-						// Gammal version som funkar fast det är samma view count för alla topics.
-
-						/*
-
-						$query = 'SELECT view FROM forum_question';
-						$result = mysqli_query($dbc,$query);
-						$row=mysqli_fetch_array($result);
-						$view=$row['view'];
-						
-						if(empty($view)){
-						$view=1;
-						$query1="INSERT INTO forum_question(view) VALUES ('$view')";
-						$result1 = mysqli_query($dbc,$query1);
-						}
-						echo $view;
-						echo " views.";
-						$addcounter=$view+1;
-						$query2="update forum_question set view='$addcounter'";
-						$result = mysqli_query($dbc,$query2);
-						
-						*/
-
-						// Här funkar det EJ, pls fix jaok :C
-
-						$query = "SELECT view FROM forum_question where id=".$_GET['view'].";";
+						$query = "SELECT view FROM forum_question where id=".$_GET['topic'].";";
 						$result = mysqli_query($dbc,$query);
 						$row=mysqli_fetch_array($result);
 						$view=$row['view'];
@@ -164,7 +119,7 @@ require '../../Connection/db_connect.php';
 						echo $view;
 						echo " views.";
 						$addcounter=$view+1;
-						$query2="update forum_question set view='$addcounter'";
+						$query2="update forum_question set view='$addcounter' where id=".$_GET['topic'].";";
 						$result = mysqli_query($dbc,$query2);
 
 						?>
@@ -181,12 +136,8 @@ require '../../Connection/db_connect.php';
 				<div class="topics">
 					
 					<div class="answerTopic">
-						<p> 
-						</p>
+						<p></p>
 					</div>
-					
-				
-
 					
 					<a href="/forum/index.php?topic=<?php echo $row['id']; ?>"><div class="answerdetail">
 						<p> 
@@ -195,7 +146,7 @@ require '../../Connection/db_connect.php';
 					</div></a>
 				</div>
 	<?php
-	} // Avsluta while-loop
+	}
 ?>
 
 </div>

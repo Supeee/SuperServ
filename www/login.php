@@ -43,6 +43,7 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
   		<li><a href="about.php">About</a></li>
   		<li id="selected"><a href="login.php">Login</a></li>
   		<li><a href="MingLee.php">Minglee</a></li>
+  		<li><a href="Admin.php">Admin Login</a></li>
 	</ul>
 </div>
 
@@ -69,10 +70,9 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 	<a href="register.php"><button id="button">Register</button></a>
 </div>
 </div>
-<marquee id="Sanic" behavior="relative" direction="right" scrollamount="100">
-<img src="https://www.nedgame.nl/gfx/sonic.png">
+<marquee class="pranked" behavior="relative" direction="right" scrollamount="50">
+<img src="IMAGES/filthypranked.gif">
 </marquee>
-
 
 </body>
 </html>
