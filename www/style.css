@@ -17,7 +17,12 @@ body {
   border: 3px solid #000000;
   padding: 7.5px;
   background-color: #000;
-  border-radius: 10px; 
+  border-radius: 10px;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px)
 }
 
 .bannerImage img {
@@ -154,6 +159,16 @@ h3 {
 
 #Portal2hell:hover {
   background-color: #cc6600;
+}
+
+h6 {
+  margin-top: -15px;
+  margin-bottom: -5px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'HAGANE';
+  text-shadow: 2px 2px 0 black;
 }
 
 /* OLD BORING HEADER */

@@ -42,21 +42,13 @@ include 'logincheck.php';
 
 ?>
 
+<p></p>
+
+<h6>About our website</h6>
+
 <p>WARNING: This site is for comedic purposes only. Do not take any of it contents to serious. WARNING.</p>
 
-<p>Welcome to a fan-made cancer site that supports the king of all plebs, Forsen (also known as: Sebastian Fors). For more information about our dad, please visit http://www.twitch.tv/forsenlol/. Enter the never-lucky give-away!: </p>
-
-
-<div><a id="cory" href="cory_secret_hideout.php">Cory's confinement, do not open.</a>
-</div>
-</div>
-<marquee behavior="relative" direction="right" scrollamount="98">
-<img id="Tails" src="http://nerdkeller.eu/wp-content/uploads/9489132_60x60.png.gif">
-</marquee>
-
-<marquee id="Sanic" behavior="relative" direction="right" scrollamount="100">
-<img src="https://www.nedgame.nl/gfx/sonic.png">
-</marquee>
+<p>This is a fanmade site that serves the purpose of selling merchandice to cancerous plebs and sharing your experience on the forums. Have any questions? Create a thread in forums and take help from plebs all around the world!</p>
 
 </body>
 </html>
