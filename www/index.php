@@ -3,22 +3,22 @@
 <head>
 	<link rel="Stylesheet" href="style.css">
 
-	<title>gachi-gasm-forever.com/home</title>
+	<title>Elgiganten</title>
 </head>
 <body>
 
 <div id="page-wrap">
 
 <div class="bannerImage">
-	<img src="IMAGES/TwistingNether.jpg">
+	<img src="IMAGES/el.jpg">
 </div>
 
 <div id="container">
 	<header>
-		<h1>GachiGASM Forever</h1>
+		<h1>Elgiganten</h1>
 	</header>
 	<div id="banner">
-		<h2>Bring the cancer all the way home!</h2>
+		<h2>Mer än låga priser</h2>
 	</div>
 
 </div>
@@ -27,11 +27,9 @@
 	<ul>
   		<li id="selected"><a href="index.php">Home</a></li>
   		<li><a href="forum.php">Forum</a></li>
-  		<li><a href="plebshop.php">Plebshop</a></li>
+  		<li><a href="leshop.php">Online-shop</a></li>
   		<li><a href="about.php">About</a></li>
   		<li><a href="Logout.php">Logout</a></li>
-  		<li><a href="MingLee.php">Minglee</a></li>
-  		<li><a href="Admin.php">Admin Login</a></li>
 	</ul>
 </div>
 
@@ -42,21 +40,12 @@ include 'logincheck.php';
 
 ?>
 
-<p>WARNING: This site is for comedic purposes only. Do not take any of it contents to serious. WARNING.</p>
+<p>...</p>
 
-<p>Welcome to a fan-made cancer site that supports the king of all plebs, Forsen (also known as: Sebastian Fors). For more information about our dad, please visit http://www.twitch.tv/forsenlol/. Enter the never-lucky give-away!: </p>
+<p>...</p>
 
-
-<div><a id="cory" href="cory_secret_hideout.php">Cory's confinement, do not open.</a>
 </div>
 </div>
-<marquee behavior="relative" direction="right" scrollamount="98">
-<img id="Tails" src="http://nerdkeller.eu/wp-content/uploads/9489132_60x60.png.gif">
-</marquee>
-
-<marquee id="Sanic" behavior="relative" direction="right" scrollamount="100">
-<img src="https://www.nedgame.nl/gfx/sonic.png">
-</marquee>
 
 </body>
 </html>

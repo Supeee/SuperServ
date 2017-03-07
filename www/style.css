@@ -10,28 +10,26 @@ body {
 }
 
 .bannerImage {
-  z-index: -1px;
-  margin: auto;
-  margin-bottom: 10px;
-  width: 90%;
-  border: 3px solid #000000;
-  padding: 7.5px;
-  background-color: #000;
-  border-radius: 10px;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px)
+	z-index: -1px;
+	margin-bottom: 10px;
+	border: 3px solid #000000;
+	padding: 7.5px;
+	background-color: #000001;
+	border-radius: 10px;
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px);
 }
 
 .bannerImage img {
-  width: 100%;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px)
+	width: 100%;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
 }
 
 #page-wrap {
@@ -60,7 +58,7 @@ body {
   padding: 15px 20px;
   position: center;
   border: 1px solid black;
-  background-color: #444;
+  background-color: #000066;
   box-shadow: 5px 5px 10px black;
 }
 
@@ -81,7 +79,7 @@ p {
   color: white;
 }
 
-.pinsamlinje {
+.pinlinje {
   margin-top: 15px;
   margin-left: 10px;
   width: 960px;
@@ -99,30 +97,30 @@ p {
 }
 
 h1 {
-  margin-top: -220px;
-  margin-left: 170px;
-  font-weight: 10px;
-  text-transform: uppercase;
-  color: white;
-  font-family: 'HAGANE';
-  font-style: italic;
-  font-size: 64px;
-  line-height: 54px;
-  text-shadow: 2px 5px 0 black;
-  text-align: center;
-  position: absolute;
+	margin-top: -180px;
+	margin-left: 320px;
+	font-weight: 10px;
+	text-transform: uppercase;
+	color: #993D00;
+	font-family: 'HAGANE';
+	font-style: bold;
+	font-size: 64px;
+	line-height: 54px;
+	text-shadow: 2px 5px 0 #1A0A00;
+	text-align: center;
+	position: absolute;
 }
 
 h2 {
-  margin-top: -140px;
-  margin-left: 260px;
-  color: white;
+  margin-top: -120px;
+  margin-left: 320px;
+  color: #993D00;
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
   font-family: 'HAGANE';
-  font-style: italic;
-  text-shadow: 2px 2px 0 black;
+  font-style: bold;
+  text-shadow: 2px 2px 0 #1A0A00;
   text-align: center;
   position: absolute;
 }
@@ -132,7 +130,6 @@ h3 {
   text-transform: uppercase;
   color: white;
   font-family: 'HAGANE';
-  font-style: italic;
   font-size: 58px;
   line-height: 54px;
   text-shadow: 2px 5px 0 black;
@@ -171,39 +168,26 @@ h6 {
   text-shadow: 2px 2px 0 black;
 }
 
-/* OLD BORING HEADER */
-
-/*header {
-  background: gray;
-  color: black;
-  font-family: 'Raleway',sans-serif; 
-  font-size: 24px; 
-  line-height: 88px;
-  text-transform: uppercase;
-}
-
-h2 {
-  color: #ffffff; 
-  font-family: 'Raleway',sans-serif; 
-  font-size: 31px;
-  margin-top: 20px;
-}*/
 
 
 
 /* NAV BAR */
+
+
+
+
 
 nav {
   width: 100%;
 }
 
 #selected {
-  background-color: #cc6600;
+  background-color: #993D00;
 }
 
 .nav ul {
   list-style: none;
-  background-color: #444;
+  background-color: #000033;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -229,7 +213,7 @@ nav {
 }
  
 .nav a:hover {
-  background-color: #cc6600;
+  background-color: #993D00;
 }
  
 .nav a.active {
@@ -252,60 +236,6 @@ nav {
   display: inline-block;
   margin-right: -4px;
   }
-}
-
-
-
-/* GIFS */
-
-#Sanic {
-  padding-top: 50px;
-}
-
-#Tails {
-  width: 225px;
-}
-
-#Knackels {
-  margin-top: -300px;
-  margin-left: -210px;
-  position: fixed;
-  z-index: -1;
-}
-
-#KnackelsIndex {
-  margin-top: -300px;
-  margin-left: -420px;
-  position: fixed;
-  z-index: -1;
-}
-
-.kaby {
-  margin-top: 150px;
-  margin-left: -50px;
-  position: fixed;
-}
-
-.kaby img {
-  width: 100px;
-}
-
-.pranked {
-  margin-top: 50px;
-  margin-bottom: -50px;
-}
-
-.pranked img {
-  width: 500px;
-}
-
-/* Cory Page */ 
-
-
-
-
-#cory {
-  color: white;
 }
 
 
@@ -401,7 +331,7 @@ nav {
 
 
 
-/* THE PLEBSHOP CSS */
+/* THE LESHOP CSS */
 
 
 
@@ -411,7 +341,10 @@ nav {
 
 
 
-/* PLEBPORTAL CSS */
+/* LEPORTAL CSS */
+
+
+
 
 #line1 {
   width: 515px;
@@ -513,7 +446,11 @@ nav {
 
 
 
+
+
 /* LINE DEBRIS */
+
+
 
 
 
@@ -552,7 +489,11 @@ nav {
 
 
 
+
+
 /* PRODUCT 2 - THUG T-SHIRT */
+
+
 
 
 
@@ -1064,6 +1005,10 @@ nav {
 
 /* FORUM CSS */
 
+
+
+
+
 .forum_news {
   float:left;
   margin-top: 30px;
@@ -1207,118 +1152,4 @@ nav {
   margin-left: 850px;
   margin-bottom: 15px;
   font-weight: bold;
-}
-
-
-
-/* POP UP */
-
-
-#link {
-  position: absolute;
-  margin-left: 15px;
-}
-
-.popUpTitle {
-  background-color: #444;
-  height: 40px;
-  width: 100%;
-}
-
-.popUpTitle p {
-  margin-left: 10px;
-}
-
-.popUpTitle img {
-  float: right;
-  margin-right: 5px;
-  margin-top: -27.5px;
-}
-
-.data {
-  background-color: #FFFFFF;
-  height: auto;
-  overflow: hidden;
-  font-size: 14px;
-  padding: 15px 15px 40px;
-  width: auto;
-}
-
-.buttons li {
-  cursor: pointer;
-  float: left;
-  height: 29px;
-  width: 134px;
-}
-
-span.button {
-  background-color: black;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 8px 25px;
-  text-align: center;
-}
-
-.popUpDisplay {
-  display: none;
-  position: absolute;
-  width: 440px;
-  height: 300px;
-  width: 440px;
-  z-index: 1001;
-}
-
-.dimLayer {
-  display: none;
-  outline: 0px none;
-  height: 100%;
-  width: 100%;
-  background: #A9A9A9;
-  top: 0px;
-  left: 0px;
-  z-index: 900;
-  position: absolute;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -khtml-opacity: 0.5;
-  -moz-opacity: 0.5;
-}
-
-
-/* MING LEE PAGE */
-
-p1 {
-  margin-left: 200px;
-  color: white;
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: bold;
-  font-family: 'Josefin Sans', sans-serif;
-  text-shadow: 2px 2px 0 black;
-}
-
-.Back1 {
-  margin-top: 20px;
-  margin-left: 450px;
-  width: 50px;
-  font-size: 1.5em;
-  padding: 15px 20px;
-  position: center;
-  border: 1px solid black;
-  background-color: #444;
-  box-shadow: 5px 5px 10px black;
-}
-
-.Back1:hover {
-  background-color: #cc6600;
-}
-
-.back1text {
-  color: white;
-}
-
-.back1text:focus {
-  color: black;
 }

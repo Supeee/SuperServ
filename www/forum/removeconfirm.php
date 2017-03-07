@@ -3,22 +3,22 @@
 <head>
 	<link rel="Stylesheet" href="/style.css">
 
-	<title>Forsen News</title>
+	<title>Elgiganten</title>
 </head>
 <body>
 
 <div id="page-wrap">
 
 <div class="bannerImage">
-	<img src="/IMAGES/TwistingNether.jpg">
+	<img src="/IMAGES/el.jpg">
 </div>
 
 <div id="container">
 	<header>
-		<h1>GachiGASM Forever</h1>
+		<h1>Elgiganten</h1>
 	</header>
 	<div id="banner">
-		<h2>Bring the cancer all the way home!</h2>
+		<h2>Mer än låga priser</h2>
 	</div>
 
 </div>
@@ -27,10 +27,9 @@
 	<ul>
   		<li><a href="/index.php">Home</a></li>
   		<li id="selected"><a href="/forum.php">Forum</a></li>
-  		<li><a href="/plebshop.php">Plebshop</a></li>
+  		<li><a href="/leshop.php">Online-shop</a></li>
   		<li><a href="/about.php">About</a></li>
   		<li><a href="/Logout.php">Logout</a></li>
-  		<li><a href="/MingLee.php">Minglee</a></li>
 	</ul>
 </div>
 
@@ -84,10 +83,6 @@ Your topic has been deleted.</p>
 '; 
 
 ?>
-
-<img id="KnackelsIndex" src="/IMAGES/knackels.gif">
-
-</div>
 
 <div id="footer"></div>
 

@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>Register at gachi-muchi-forever</title>
+		<title>Register at Elgiganten</title>
 		<link href="assets/css/registerstyle.css" rel="stylesheet" />
 	</head>
 

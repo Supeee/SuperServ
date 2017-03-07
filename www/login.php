@@ -15,35 +15,33 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 
 	<link rel="Stylesheet" href="style.css" >
 
-	<title>gachi-gasm-forever.com/home</title>
+	<title>Elgiganten</title>
 </head>
 <body>
 
 <div id="page-wrap">
 
 <div class="bannerImage">
-	<img src="IMAGES/TwistingNether.jpg">
+	<img src="IMAGES/el.jpg">
 </div>
 
 <div id="container">
 	<header>
-		<h1>GachiGASM Forever</h1>
+		<h1>Elgiganten</h1>
 	</header>
 	<div id="banner">
-		<h2>Bring the cancer all the way home!</h2>
+		<h2>Mer än låga priser</h2>
 	</div>
 
 </div>
 
 <div class="nav">
 	<ul>
-  		<li><a href="index.php">Home</a></li>
-  		<li><a href="forum.php">Forum</a></li>
-  		<li><a href="plebshop.php">Plebshop</a></li>
-  		<li><a href="about.php">About</a></li>
-  		<li id="selected"><a href="login.php">Login</a></li>
-  		<li><a href="MingLee.php">Minglee</a></li>
-  		<li><a href="Admin.php">Admin Login</a></li>
+		<li><a href="index.php">Home</a></li>
+		<li><a href="forum.php">Forum</a></li>
+		<li><a href="leshop.php">Online-shop</a></li>
+		<li><a href="about.php">About</a></li>
+		<li id="selected"><a href="login.php">Login</a></li>
 	</ul>
 </div>
 
@@ -56,7 +54,7 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 ?>
 </header>
 
-<p>Welcome to a fan-made cancer site that supports the king of all plebs, Forsen (also known as: Sebastian Fors). For more information about our dad, please visit http://www.twitch.tv/forsenlol/. Enter the never-lucky give-away!: </p>
+<p>...</p>
 
 <div class="loginboxes">
 	<form method="post" action="verification.php">
@@ -70,9 +68,6 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 	<a href="register.php"><button id="button">Register</button></a>
 </div>
 </div>
-<marquee class="pranked" behavior="relative" direction="right" scrollamount="50">
-<img src="IMAGES/filthypranked.gif">
-</marquee>
 
 </body>
 </html>

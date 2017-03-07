@@ -1,67 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="Stylesheet" href="style.css">
-
-	<title>Gachi-Forum</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
 </head>
 <body>
+
 <div id="page-wrap">
+	
+<div class="bannerImage">
+	<img src="IMAGES/el.jpg">
+</div>
 
-	<div class="bannerImage">
-		<img src="IMAGES/TwistingNether.jpg">
+<div id="container">
+	<h1>Elgiganten</h1>
+	<div id="banner">
+		<h2>Mer än låga priser</h2>
 	</div>
-
-	<div id="container">
-		<header>
-			<h1>GachiGASM Forever</h1>
-		</header>
-		<div id="banner">
-			<h2>Bring the cancer all the way home!</h2>
-		</div>
-	</div>
+</div>
 
 	<div class="nav">
 		<ul>
-	  		<li><a href="index.php">Home</a></li>
-	  		<li id="selected"><a href="forum.php">Forum</a></li>
-	  		<li><a href="plebshop.php">Plebshop</a></li>
-	  		<li><a href="about.php">About</a></li>
-	  		<li><a href="Logout.php">Logout</a></li>
-	  		<li><a href="MingLee.php">Minglee</a></li>
-  			<li><a href="Admin.php">Admin Login</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li id="selected"><a href="forum.php">Forum</a></li>
+			<li><a href="leshop.php">Online-shop</a></li>
+			<li><a href="about.php">About</a></li>
+			<li><a href="Logout.php">Logout</a></li>
 		</ul>
 	</div>
 
 	<div id="bg-wrap">
-
+		
 		<p></p>
 		<div id="checkers">
-		<?php
-		include 'logincheck.php';
-
-		?>
+			<?php
+			include 'logincheck.php';
+			?>
 		</div>
 
 		<div class="ptags">
-			<p>Welcome to our very own forums-page! Here the admins post the latest news about Forsen and his cancer adventures (including Salty Sunday episodes, brought to you by Selloutstorm.com!)</p>
+			<p>Välkommen till Elgigantens forum, här får du svar om produkter och köp, från vår support.</p>
 		</div>
 
-		<div class="pinsamlinje">
+		<div class="pinlinje">
 			
-		</div>
-
-		<div class="forum_news">
-			<!--Skriver h4 eftesrsom h1, h2 och eventuellt h3 är upptagna för titlen och annat (position: absolute; är ivägen).-->
-			
-			<h4>Recent: </h4>
-
-				<p></p>
-
 		</div>
 
 		<div class="add_question">
-
+			
 			<table width="500" border="10" align="center">
 				<tr>
 				<form id="form1" name="form1" method="post" action="add_topic.php">
@@ -96,8 +82,6 @@
 				</tr>
 			</table>
 		</div>
-
-		<img id="Knackels" src="IMAGES/knackels.gif">
 
 		<div class="awkwardline">
 			<h5>Topics</h5>
@@ -139,7 +123,7 @@
 			} // Avsluta while-loop
 		?>
 	</div>
-</div>
 
+</div>
 </body>
 </html>

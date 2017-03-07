@@ -21,7 +21,7 @@ else if(isset($_POST['username']) && isset($_POST['password'])){
 		header('Location: index.php');
 	}else{
 		$_SESSION['loggedIn'] = FALSE;
-		header('Location: fakuman.php');
+		header('Location: login.php');
 	}	
 }
 
