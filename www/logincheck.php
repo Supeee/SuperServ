@@ -5,7 +5,6 @@ if(!@$_SESSION['loggedIn']){ // Om man inte är inloggad
 	header('Location: login.php'); // Skickas till login.php
 }
 
-
 if(@$_SESSION['timeout']+ 60*10 < time()){ //Om Sessionstiden + 10(60sekunder*10) minuter är mindre än nuvarande tid
  	session_destroy(); // Avsluta sessionen
  	session_unset(); // Avsluta sessionen (gammalt sätt)
@@ -17,5 +16,4 @@ if(@$_SESSION['timeout']+ 60*10 < time()){ //Om Sessionstiden + 10(60sekunder*10
 
 echo $meddelande; // Visa meddelande ( Hej = Inloggad | Hej då = Utloggad)
 echo $_SESSION['username'];
-
 ?>
