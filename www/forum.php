@@ -42,10 +42,6 @@
 			<p>Välkommen till Elgigantens forum, här får du svar om produkter och köp, från vår support.</p>
 		</div>
 
-		<div class="pinlinje">
-			
-		</div>
-
 		<div class="add_question">
 			
 			<table width="500" border="10" align="center">
@@ -83,7 +79,7 @@
 			</table>
 		</div>
 
-		<div class="awkwardline">
+		<div class="aline">
 			<h5>Topics</h5>
 		</div>
 

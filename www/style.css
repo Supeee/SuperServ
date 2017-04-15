@@ -1,7 +1,6 @@
 body {
-  background-image: url("IMAGES/bg.png");
   background-size: 100%;
-  color: white;
+  background-color: #000d1a;
 }
 
 @font-face {
@@ -38,7 +37,7 @@ body {
 }
 
 #bg-wrap {
-    background-color: #202020;
+    background-color: #001a33;
     width: 990px;
     height: 2000px;
     padding: 0 0 0px;
@@ -150,16 +149,16 @@ h3 {
   height: 60px;
   padding: 15px 20px;
   border: 1px solid black;
-  background-color: #444;
+  background-color: #cc6600;
   box-shadow: 5px 5px 10px black;
 }
 
 #Portal2hell:hover {
-  background-color: #cc6600;
+  background-color: #000066;
 }
 
 h6 {
-  margin-top: -15px;
+  margin-top: 15px;
   margin-bottom: -5px;
   color: white;
   font-size: 32px;
@@ -317,17 +316,6 @@ nav {
   background-color: #cc6600;
 }
 
-/* VIDEOS */
-
-
-#video1 {
-  position: absolute, center;
-  margin-top: -80px;
-}
-
-
-
-
 
 
 
@@ -365,16 +353,16 @@ nav {
   float:left;
   margin-top: 30px;
   margin-left: 75px;
-  width:  512.5px;
-  height: 560px;
+  width:  520px;
+  height: 260px;
   border: 5px solid black;
   background-color: darkred;
   position: absolute;
 }
 
 .productPicture {
-  width: 512.5px;
-  height: 560px;
+  width: 520px;
+  height: 260px;
 }
 
 .productPicture img {
@@ -417,15 +405,16 @@ nav {
 }
 
 .productPrice p {
-  color:green;
+  color: #008000;
   font-size: 20px;
-  margin-top: 2px;
+  margin-top: -20px;
   line-height: 35px;
 }
 
 .purchase {
   width: 115px;
   height: 35px;
+  margin-top: -20px;
   text-align:center;
   float:left;
   border: 2px solid black;
@@ -491,13 +480,13 @@ nav {
 
 
 
-/* PRODUCT 2 - THUG T-SHIRT */
+/* PRODUCT 2 - SWTICH */
 
 
 
 
 
-#lineThug {
+#lineSwitch {
   width: 515px;
   height: 5px;
   border: 5px white;
@@ -505,46 +494,51 @@ nav {
   margin-bottom: 20px;
 }
 
-.productThug {
+.productSwitch {
   float:left;
   margin-top: 30px; 
   margin-left: 730px;
-  width:  512.5px;
-  height: 560px;
+  width:  506px;
+  height: 260px;
   border: 5px solid black;
   background-color: darkred;
   position: absolute;
 }
 
-.productPictureThug {
-  width: 512.5px;
+.productPictureSwitch {
+  width: 460px;
   margin-top: 0px;
   margin-left: 0px;
-  height: 560px;
+  height: 200px;
 }
 
-.productPictureThug img {
+.productPictureSwitch {
   height: 100%;
   width: 100%;
 }
 
-.productNameThug {
+.productPictureSwitch img {
+  height: 100%;
+  width: 100%;
+}
+
+.productNameSwitch {
   width: 375px;
+  margin-top: 100px;
   text-align: left; 
 }
 
-.productNameThug p {
+.productNameSwitch p {
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   color: white;
   font-weight: bold;
-  margin-top: 25.5px;
+  margin-top: 0px;
   margin-bottom: -40px;
   height: 65px;
-  
 }
 
-.productDescThug p {
+.productDescSwitch p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: white;
@@ -554,7 +548,7 @@ nav {
   margin-bottom: 15px;
 }
 
-.productPriceThug {
+.productPriceSwitch {
   width: 115px;
   text-align:center;
   margin-left: 10px;
@@ -563,23 +557,24 @@ nav {
   height: 35px;
 }
 
-.productPriceThug p {
+.productPriceSwitch p {
   color:green;
   font-size: 20px;
-  margin-top: 2px;
+  margin-top: -20px;
   line-height: 35px;
 }
 
-.purchaseThug {
+.purchaseSwitch {
   width: 115px;
   height: 35px;
   text-align:center;
   float:left;
+  margin-top: -20px;
   border: 2px solid black;
   background-color:lightgreen;
 }
 
-.purchaseThug p {
+.purchaseSwitch p {
   color:white;
   font-size: 20px;
   margin: 0px;
@@ -587,7 +582,7 @@ nav {
   margin-bottom: 50px;
 }
 
-.purchaseThug:hover {
+.purchaseSwitch:hover {
   background-color:green;
 }
 
@@ -602,12 +597,12 @@ nav {
   height: 30px;
   padding: 5px 5px;
   border: 1px solid black;
-  background-color: #444;
+  background-color: #911D00;
   box-shadow: 5px 5px 10px black;
 }
 
 .back:hover {
-  background-color: #cc6600; 
+  background-color: #000080; 
 }
 
 
@@ -619,7 +614,7 @@ nav {
 
 
 
-#lineTrump {
+#lineSmash {
   width: 515px;
   height: 5px;
   border: 5px white;
@@ -627,28 +622,29 @@ nav {
   margin-bottom: 20px;
 }
 
-.productTrump {
+.productSmash {
   float:left;
-  margin-top: 830px;
+  margin-top: 500px;
   margin-left: 75px;
   width:  512px;
-  height: 512px;
+  height: 728px;
   border: 5px solid black;
   background-color: darkred;
   position: absolute;
 }
 
-.productPictureTrump {
-  width: 512.5px;
+.productPictureSmash img {
+  width: 100%;
+  height: 100%;
 }
 
-.productNameTrump {
+.productNameSmash {
   width: 375px;
   margin-top: 8px;
   text-align: left; 
 }
 
-.productNameTrump p {
+.productNameSmash p {
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   color: white;
@@ -657,7 +653,7 @@ nav {
   height: 65px;  
 }
 
-.productDescTrump p {
+.productDescSmash p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: white;
@@ -667,7 +663,7 @@ nav {
   margin-bottom: 15px;
 }
 
-.productPriceTrump {
+.productPriceSmash {
   width: 115px;
   text-align:center;
   margin-left: 10px;
@@ -676,14 +672,14 @@ nav {
   height: 35px;
 }
 
-.productPriceTrump p {
+.productPriceSmash p {
   color:green;
   font-size: 20px;
   margin-top: 2px;
   line-height: 35px;
 }
 
-.purchaseTrump {
+.purchaseSmash {
   width: 115px;
   height: 35px;
   text-align:center;
@@ -692,7 +688,7 @@ nav {
   background-color:lightgreen;
 }
 
-.purchaseTrump p {
+.purchaseSmash p {
   color:white;
   font-size: 20px;
   margin: 0px;
@@ -700,305 +696,10 @@ nav {
   margin-bottom: 50px;
 }
 
-.purchaseTrump:hover {
+.purchaseSmash:hover {
   background-color:green;
 }
 
-
-
-
-/* Product 4 */
-
-
-
-
-
-#lineGASM {
-  width: 515px;
-  height: 5px;
-  border: 5px white;
-  background-color: white;
-  margin-bottom: 20px;
-}
-
-.productGASM {
-  float:left;
-  margin-top: 830px;
-  margin-left: 730px;
-  width:  512px;
-  height: 512px;
-  border: 5px solid black;
-  background-color: darkred;
-  position: absolute;
-}
-
-.productPictureGASM {
-  width: 512.5px;
-}
-
-.productPictureGASM img {
-  width: 512px;
-  height: 512px;
-}
-
-.productNameGASM {
-  width: 375px;
-  margin-top: 8px;
-  text-align: left; 
-}
-
-.productNameGASM p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  color: white;
-  font-weight: bold;
-  margin-bottom: -40px;
-  height: 65px;  
-}
-
-.productDescGASM p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-  margin-top: -10px;
-  height: 65px;
-  margin-bottom: 15px;
-}
-
-.productPriceGASM {
-  width: 115px;
-  text-align:center;
-  margin-left: 10px;
-  float:left;
-  margin-left: -20px;
-  height: 35px;
-}
-
-.productPriceGASM p {
-  color:green;
-  font-size: 20px;
-  margin-top: 2px;
-  line-height: 35px;
-}
-
-.purchaseGASM {
-  width: 115px;
-  height: 35px;
-  text-align:center;
-  float:left;
-  border: 2px solid black;
-  background-color:lightgreen;
-}
-
-.purchaseGASM p {
-  color:white;
-  font-size: 20px;
-  margin: 0px;
-  line-height: 35px;
-  margin-bottom: 50px;
-}
-
-.purchaseGASM:hover {
-  background-color:green;
-}
-
-
-
-/* Product 5 */
-
-
-
-
-
-#lineFrank {
-  width: 515px;
-  height: 5px;
-  border: 5px white;
-  background-color: white;
-  margin-bottom: 20px;
-}
-
-.productFrank {
-  float:left;
-  margin-top: 1580px;
-  margin-left: 75px;
-  width:  512px;
-  height: 512px;
-  border: 5px solid black;
-  background-color: darkred;
-  position: absolute;
-}
-
-.productPictureFrank {
-  width: 512.5px;
-}
-
-.productPictureFrank img {
-  width: 512px;
-  height: 512px;
-}
-
-.productNameFrank {
-  width: 375px;
-  margin-top: 8px;
-  text-align: left; 
-}
-
-.productNameFrank p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  color: white;
-  font-weight: bold;
-  margin-bottom: -40px;
-  height: 65px;  
-}
-
-.productDescFrank p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-  margin-top: -10px;
-  height: 65px;
-  margin-bottom: 15px;
-}
-
-.productPriceFrank {
-  width: 115px;
-  text-align:center;
-  margin-left: 10px;
-  float:left;
-  margin-left: -20px;
-  height: 35px;
-}
-
-.productPriceFrank p {
-  color:green;
-  font-size: 20px;
-  margin-top: 2px;
-  line-height: 35px;
-}
-
-.purchaseFrank {
-  width: 115px;
-  height: 35px;
-  text-align:center;
-  float:left;
-  border: 2px solid black;
-  background-color:lightgreen;
-}
-
-.purchaseFrank p {
-  color:white;
-  font-size: 20px;
-  margin: 0px;
-  line-height: 35px;
-  margin-bottom: 50px;
-}
-
-.purchaseFrank:hover {
-  background-color:green;
-}
-
-
-
-
-/* Product 6 */
-
-
-
-
-
-#lineReynoodle {
-  width: 515px;
-  height: 5px;
-  border: 5px white;
-  background-color: white;
-  margin-bottom: 20px;
-}
-
-.productReynoodle {
-  float:left;
-  margin-top: 1580px;
-  margin-left: 730px;
-  width:  512px;
-  height: 512px;
-  border: 5px solid black;
-  background-color: darkred;
-  position: absolute;
-}
-
-.productPictureReynoodle {
-  width: 512.5px;
-}
-
-.productPictureReynoodle img {
-  width: 512px;
-  height: 512px;
-}
-
-.productNameReynoodle {
-  width: 375px;
-  margin-top: 8px;
-  text-align: left; 
-}
-
-.productNameReynoodle p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  color: white;
-  font-weight: bold;
-  margin-bottom: -40px;
-  height: 65px;  
-}
-
-.productDescReynoodle p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-  margin-top: -10px;
-  height: 65px;
-  margin-bottom: 15px;
-}
-
-.productPriceReynoodle {
-  width: 115px;
-  text-align:center;
-  margin-left: 10px;
-  float:left;
-  margin-left: -20px;
-  height: 35px;
-}
-
-.productPriceReynoodle p {
-  color:green;
-  font-size: 20px;
-  margin-top: 2px;
-  line-height: 35px;
-}
-
-.purchaseReynoodle {
-  width: 115px;
-  height: 35px;
-  text-align:center;
-  float:left;
-  border: 2px solid black;
-  background-color:lightgreen;
-}
-
-.purchaseReynoodle p {
-  color:white;
-  font-size: 20px;
-  margin: 0px;
-  line-height: 35px;
-  margin-bottom: 50px;
-}
-
-.purchaseReynoodle:hover {
-  background-color:green;
-}
 
 
 
@@ -1017,7 +718,7 @@ nav {
   width:  227.5px;
   height: 160px;
   border: 5px solid black;
-  background-color: #444;
+  background-color: #000066;
 }
 
 .forum_news h4 {
@@ -1038,41 +739,41 @@ nav {
 }
 
 .add_question table {
-  border-color: #404040;
+  border-color: ##000066;
   background-color: white;
 }
 
 .add_question td {
-  border-color: black;
+  border-color: #000066;
   background-color: white;
 }
 
 .add_question strong {
   font-family: 'Raleway', sans-serif;
-  color: black; 
+  color: black;
 }
 
-.awkwardline {
+.aline {
   margin-top: 50px;
   margin-left: -40px;
   width: 1060px;
   height: 100px;
   border: 5px solid black;
-  background-color: white;
+  background-color: #00004d;
   margin-bottom: 20px;
   border-radius: 10px;
 }
 
-.awkwardline h5 {
+.aline h5 {
   margin-top: 0px;
   margin-left: -25px;
   font-weight: 10px;
   text-transform: uppercase;
-  color: black;
+  color: #FFF;
   font-family: 'HAGANE';
   font-style: italic;
   font-size: 68px;
-  text-shadow: 2px 3px 0 black;
+  text-shadow: 3px 2px 0 #00001a;
   text-align: center;
 }
 
@@ -1090,7 +791,7 @@ nav {
   width:  227.5px;
   height: 175px;
   border: 5px solid black;
-  background-color: #444;
+  background-color: #00004d;
   border-radius: 10px;
 }
 
@@ -1117,7 +818,7 @@ nav {
   margin-left: 5px;
   margin-right: 5px;
   border: 5px solid black;
-  background-color: #444;
+  background-color: #00001a;
   z-index: -1;
 }
 

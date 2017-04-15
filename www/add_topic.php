@@ -39,7 +39,7 @@ include 'logincheck.php';
 
 <?php
 
-require '../Connection/db_connect.php'
+require '../Connection/db_connect.php';
 
 $datetime=date("y-m-d h:i:s");
 

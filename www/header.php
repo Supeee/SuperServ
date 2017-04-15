@@ -24,7 +24,7 @@ if(isset($_SESSION['SESS_LOGGEDIN']) == TRUE)
 
 {
 
-echo "Logged in as <strong>" . $_SESSION['SESS_USERNAME']. "</strong>[<a href="&quot; . $config_basedir. &quot;logout.php">logout</a>]";
+echo "Logged in as <strong>" . $_SESSION['SESS_USERNAME']. "</strong>[<a href="&quot; . $config_basedir. &quot;logout.php">Logout</a>]";
 
 }
 
