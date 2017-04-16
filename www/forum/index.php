@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
 	<link rel="Stylesheet" href="/style.css">
 

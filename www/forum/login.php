@@ -10,7 +10,7 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
 
 	<link rel="Stylesheet" href="/style.css" >
