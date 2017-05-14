@@ -116,7 +116,7 @@
 						</div>
 						</a>
 			<?php
-			} // Avsluta while-loop
+			}
 		?>
 	</div>
 

@@ -7,6 +7,11 @@
 <body>
 
 <div id="page-wrap">
+
+<?php
+include 'logincheck.php';
+
+?>
 	
 <div class="bannerImage">
 	<img src="IMAGeS/el.jpg">
@@ -30,11 +35,6 @@
 </div>
 
 <p></p>
-
-<?php
-include 'logincheck.php';
-
-?>
 
 <h6>Om hemsidan</h6>
 

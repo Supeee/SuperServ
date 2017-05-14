@@ -8,13 +8,13 @@ require("db_connect.php");
 ?>
 
 <?php echo $config_sitename; ?>
-<div id="header"></div>
-<div id="menu">
-<a href="<?php echo $config_basedir; ?>">Home</a> -
+	<div id="header"></div>
+	<div id="menu">
+	<a href="<?php echo $config_basedir; ?>">Home</a> -
 
-<a href="<?php echo $config_basedir;?>showcart.php">View Basket/Checkout</a></div>
-<div id="container">
-<div id="bar">
+	<a href="<?php echo $config_basedir;?>showcart.php">View Basket/Checkout</a></div>
+	<div id="container">
+	<div id="bar">
 <?php
 require("bar.php");
 

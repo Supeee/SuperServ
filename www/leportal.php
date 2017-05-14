@@ -7,8 +7,8 @@
 <body>
 	
 <?php
-include 'logincheck.php';
-include '../Connection/db_connect.php';
+	include 'logincheck.php';
+	include '../Connection/db_connect.php';
 ?>
 
 <div class="back"><a href="index.php">Back</a>
@@ -19,12 +19,12 @@ include '../Connection/db_connect.php';
 </div>
 
 <?php
-	$query = "SELECT * FROM products where id=1;";
-	$result = mysqli_query($dbc,$query);
-	
-	while($row=mysqli_fetch_array($result)){			
-			
-			echo'
+$query = "SELECT * FROM products where id=1;";
+$result = mysqli_query($dbc,$query);
+
+while($row=mysqli_fetch_array($result)){			
+		
+		echo'
 			
 				<div class="product">
 			
@@ -68,12 +68,12 @@ include '../Connection/db_connect.php';
 </div>
 
 <?php
-	$query = "SELECT * FROM products where id=2;";
-	$result = mysqli_query($dbc,$query);
-	
-	while($row=mysqli_fetch_array($result)){			
-	
-			echo'
+$query = "SELECT * FROM products where id=2;";
+$result = mysqli_query($dbc,$query);
+
+while($row=mysqli_fetch_array($result)){			
+
+		echo'
 			
 				<div class="productSwitch">
 			
@@ -115,12 +115,12 @@ include '../Connection/db_connect.php';
 <div id="RightLine"></div>
 
 <?php
-	$query = "SELECT * FROM products where id=3;";
-	$result = mysqli_query($dbc,$query);
-	
-	while($row=mysqli_fetch_array($result)){			
-			
-			echo'
+$query = "SELECT * FROM products where id=3;";
+$result = mysqli_query($dbc,$query);
+
+while($row=mysqli_fetch_array($result)){			
+		
+		echo'
 			
 				<div class="productSmash">
 			

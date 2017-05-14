@@ -1,7 +1,11 @@
 <?php
 session_start();
 
+
+
 require_once('../Connection/db_connect.php');
+
+
 
 if(isset($_POST['mail']) && isset($_POST['username']) && isset($_POST['password'])){
 	$query = "INSERT INTO members (username, email, password) VALUES ('".$_POST['username']."','".$_POST['mail']."', PASSWORD('".$_POST['password']."'));";

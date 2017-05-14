@@ -42,8 +42,6 @@ session_destroy();
 
 <p>You're now logged out.</p><div class="button1"> <a href="login.php">Login.</a></div>
 
-<p>...</p>
-
 </div>
 
 </body>

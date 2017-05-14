@@ -10,6 +10,11 @@
 
 <div id="page-wrap">
 
+<?php
+include 'logincheck.php';
+
+?>
+
 <div class="bannerImage">
 	<img src="IMAGES/el.jpg">
 </div>
@@ -35,14 +40,6 @@
 </div>
 
 <h3>Välkommen till vår onlineshop!</h3>
-
-<?php
-include 'logincheck.php';
-
-?>
-<div class="centertexts">
-<p>Vad ska du köpa idag?</p>
-</div>
 
 <div id="Portal2hell"><a href="leportal.php">enter</a>
 </div>

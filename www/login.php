@@ -21,6 +21,15 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 
 <div id="page-wrap">
 
+<header>
+<?php
+	if(isset($_SESSION['msg'])){
+		echo $_SESSION['msg'] . '<br>';
+		unset($_SESSION['msg']);
+	}
+?>
+</header>
+
 <div class="bannerImage">
 	<img src="IMAGES/el.jpg">
 </div>
@@ -45,16 +54,6 @@ header('Location: index.php'); // Om man är inloggad skickas man till index.php
 	</ul>
 </div>
 
-<header>
-<?php
-	if(isset($_SESSION['msg'])){
-		echo $_SESSION['msg'] . '<br>';
-		unset($_SESSION['msg']);
-	}
-?>
-</header>
-
-<p>...</p>
 
 <div class="loginboxes">
 	<form method="post" action="verification.php">

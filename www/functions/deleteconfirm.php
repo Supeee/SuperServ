@@ -25,4 +25,4 @@
 						  setTimeout (function() {myWindow.close();},1);
 						}
 
-					</script>
+</script>

@@ -9,6 +9,11 @@
 
 <div id="page-wrap">
 
+<?php
+include 'logincheck.php';
+
+?>
+
 <div class="bannerImage">
 	<img src="IMAGES/el.jpg">
 </div>
@@ -34,15 +39,6 @@
 </div>
 
 <p></p>
-
-<?php
-include 'logincheck.php';
-
-?>
-
-<p>...</p>
-
-<p>...</p>
 
 </div>
 </div>
